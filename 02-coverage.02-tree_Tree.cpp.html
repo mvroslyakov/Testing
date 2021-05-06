@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2021-05-02 20:23:04</td>
+            <td class="headerValue">2021-05-06 23:52:02</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">48</td>
@@ -365,28 +365,28 @@
     <tr>
     <td align="right" class="lineno"><pre>10</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>3574</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4340</pre></td>
     <td align="left" class="src coveredLine"><pre>FileNode GetTree(const std::string&amp; path, bool dirs_only) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>11</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>3574</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4340</pre></td>
     <td align="left" class="src coveredLine"><pre>  FileNode answer;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>12</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3574 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 3574 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 7 taken 100 times">&check;</span><span class="takenBranch" title="Branch 8 taken 3474 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>3574</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 4340 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 4340 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 7 taken 214 times">&check;</span><span class="takenBranch" title="Branch 8 taken 4126 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>4340</pre></td>
     <td align="left" class="src coveredLine"><pre>  if (!exists(path)) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>13</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 100 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>100</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 214 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>214</pre></td>
     <td align="left" class="src coveredLine"><pre>    throw std::invalid_argument("Path not exist");</pre></td>
     </tr>
 
@@ -406,15 +406,15 @@
 
     <tr>
     <td align="right" class="lineno"><pre>16</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3474 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 3474 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 7 taken 92 times">&check;</span><span class="takenBranch" title="Branch 8 taken 3382 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>3474</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 4126 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 4126 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 7 taken 200 times">&check;</span><span class="takenBranch" title="Branch 8 taken 3926 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>4126</pre></td>
     <td align="left" class="src coveredLine"><pre>  if (!is_directory(path)) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>17</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 92 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>92</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 200 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>200</pre></td>
     <td align="left" class="src coveredLine"><pre>    throw std::invalid_argument("Path is not directory");</pre></td>
     </tr>
 
@@ -427,43 +427,43 @@
 
     <tr>
     <td align="right" class="lineno"><pre>19</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3382 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 3382 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 8 taken 3382 times">&check;</span><span class="notTakenBranch" title="Branch 9 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>3382</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3926 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 3926 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 8 taken 3926 times">&check;</span><span class="notTakenBranch" title="Branch 9 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>3926</pre></td>
     <td align="left" class="src coveredLine"><pre>  answer.name = boost::filesystem::path(path).filename().string();</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>20</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>3382</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>3926</pre></td>
     <td align="left" class="src coveredLine"><pre>  answer.is_dir = true;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>21</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3382 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 3382 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 9 taken 3382 times">&check;</span><span class="notTakenBranch" title="Branch 10 not taken">&cross;</span><span class="takenBranch" title="Branch 13 taken 34094 times">&check;</span><span class="notTakenBranch" title="Branch 14 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 15 taken 30712 times">&check;</span><span class="takenBranch" title="Branch 16 taken 3382 times">&check;</span><span class="takenBranch" title="Branch 18 taken 30712 times">&check;</span><span class="notTakenBranch" title="Branch 19 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 21 taken 30712 times">&check;</span><span class="notTakenBranch" title="Branch 22 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>34094</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3926 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 3926 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 9 taken 3926 times">&check;</span><span class="notTakenBranch" title="Branch 10 not taken">&cross;</span><span class="takenBranch" title="Branch 13 taken 35182 times">&check;</span><span class="notTakenBranch" title="Branch 14 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 15 taken 31256 times">&check;</span><span class="takenBranch" title="Branch 16 taken 3926 times">&check;</span><span class="takenBranch" title="Branch 18 taken 31256 times">&check;</span><span class="notTakenBranch" title="Branch 19 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 21 taken 31256 times">&check;</span><span class="notTakenBranch" title="Branch 22 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>35182</pre></td>
     <td align="left" class="src coveredLine"><pre>  for (auto&amp; child: directory_iterator(path)) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>22</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 30712 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 3 taken 3135 times">&check;</span><span class="takenBranch" title="Branch 4 taken 27577 times">&check;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>30712</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 31256 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 3 taken 3519 times">&check;</span><span class="takenBranch" title="Branch 4 taken 27737 times">&check;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>31256</pre></td>
     <td align="left" class="src coveredLine"><pre>    if (is_directory(child)){</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>23</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3135 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>3135</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3519 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>3519</pre></td>
     <td align="left" class="src coveredLine"><pre>      answer.children.push_back(</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>24</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3135 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 5 taken 3135 times">&check;</span><span class="notTakenBranch" title="Branch 6 not taken">&cross;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>6270</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3519 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 5 taken 3519 times">&check;</span><span class="notTakenBranch" title="Branch 6 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>7038</pre></td>
     <td align="left" class="src coveredLine"><pre>          GetTree(boost::filesystem::path(child).string(), dirs_only)</pre></td>
     </tr>
 
@@ -483,15 +483,15 @@
 
     <tr>
     <td align="right" class="lineno"><pre>27</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 77 times">&check;</span><span class="takenBranch" title="Branch 1 taken 27500 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>27577</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 133 times">&check;</span><span class="takenBranch" title="Branch 1 taken 27604 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>27737</pre></td>
     <td align="left" class="src coveredLine"><pre>      if (dirs_only) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>28</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>77</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>133</pre></td>
     <td align="left" class="src coveredLine"><pre>        continue;</pre></td>
     </tr>
 
@@ -504,15 +504,15 @@
 
     <tr>
     <td align="right" class="lineno"><pre>30</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 27500 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 5 taken 27500 times">&check;</span><span class="notTakenBranch" title="Branch 6 not taken">&cross;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>27500</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 27604 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 5 taken 27604 times">&check;</span><span class="notTakenBranch" title="Branch 6 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>27604</pre></td>
     <td align="left" class="src coveredLine"><pre>      answer.children.push_back({</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>31</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 27500 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 27500 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>55000</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 27604 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 27604 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>55208</pre></td>
     <td align="left" class="src coveredLine"><pre>        boost::filesystem::path(child).filename().string(), false, {}</pre></td>
     </tr>
 
@@ -540,7 +540,7 @@
     <tr>
     <td align="right" class="lineno"><pre>35</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>3382</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>3926</pre></td>
     <td align="left" class="src coveredLine"><pre>  return answer;</pre></td>
     </tr>
 
@@ -568,21 +568,21 @@
     <tr>
     <td align="right" class="lineno"><pre>39</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>400</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>640</pre></td>
     <td align="left" class="src coveredLine"><pre>void FilterEmptyNodes(const FileNode&amp; node, const path&amp; current_path=".") {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>40</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 80 times">&check;</span><span class="takenBranch" title="Branch 1 taken 320 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>400</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 128 times">&check;</span><span class="takenBranch" title="Branch 1 taken 512 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>640</pre></td>
     <td align="left" class="src coveredLine"><pre>    if (!node.is_dir) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>41</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>80</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>128</pre></td>
     <td align="left" class="src coveredLine"><pre>        return;</pre></td>
     </tr>
 
@@ -602,15 +602,15 @@
 
     <tr>
     <td align="right" class="lineno"><pre>44</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 160 times">&check;</span><span class="takenBranch" title="Branch 2 taken 160 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>320</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 256 times">&check;</span><span class="takenBranch" title="Branch 2 taken 256 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>512</pre></td>
     <td align="left" class="src coveredLine"><pre>    if (node.children.empty()) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>45</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>160</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>256</pre></td>
     <td align="left" class="src coveredLine"><pre>        boost::filesystem::remove(current_path);</pre></td>
     </tr>
 
@@ -623,15 +623,15 @@
 
     <tr>
     <td align="right" class="lineno"><pre>47</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 3 taken 320 times">&check;</span><span class="takenBranch" title="Branch 4 taken 320 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>640</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 3 taken 512 times">&check;</span><span class="takenBranch" title="Branch 4 taken 512 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1024</pre></td>
     <td align="left" class="src coveredLine"><pre>    for (auto&amp; child: node.children) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>48</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 320 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 320 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 7 taken 320 times">&check;</span><span class="notTakenBranch" title="Branch 8 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>320</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 512 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 4 taken 512 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 7 taken 512 times">&check;</span><span class="notTakenBranch" title="Branch 8 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>512</pre></td>
     <td align="left" class="src coveredLine"><pre>        FilterEmptyNodes(child, current_path / child.name);</pre></td>
     </tr>
 
@@ -659,14 +659,14 @@
     <tr>
     <td align="right" class="lineno"><pre>52</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>955</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1773</pre></td>
     <td align="left" class="src coveredLine"><pre>bool operator == (const FileNode&amp; f1, const FileNode&amp; f2) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>53</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 951 times">&check;</span><span class="takenBranch" title="Branch 2 taken 4 times">&check;</span><span class="takenBranch" title="Branch 3 taken 947 times">&check;</span><span class="takenBranch" title="Branch 4 taken 4 times">&check;</span><br/><span class="takenBranch" title="Branch 6 taken 927 times">&check;</span><span class="takenBranch" title="Branch 7 taken 20 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>955</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 1705 times">&check;</span><span class="takenBranch" title="Branch 2 taken 68 times">&check;</span><span class="takenBranch" title="Branch 3 taken 1645 times">&check;</span><span class="takenBranch" title="Branch 4 taken 60 times">&check;</span><br/><span class="takenBranch" title="Branch 6 taken 1513 times">&check;</span><span class="takenBranch" title="Branch 7 taken 132 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1773</pre></td>
     <td align="left" class="src coveredLine"><pre>  return f1.name == f2.name &amp;&amp; f1.is_dir == f2.is_dir &amp;&amp; f1.children == f2.children;</pre></td>
     </tr>
 

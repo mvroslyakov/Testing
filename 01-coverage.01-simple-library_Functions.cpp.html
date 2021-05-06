@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2021-05-02 20:23:03</td>
+            <td class="headerValue">2021-05-06 23:52:02</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">26</td>
@@ -323,14 +323,14 @@
     <tr>
     <td align="right" class="lineno"><pre>4</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>116</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>176</pre></td>
     <td align="left" class="src coveredLine"><pre>int Add(int x, int y) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>5</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>116</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>176</pre></td>
     <td align="left" class="src coveredLine"><pre>    return x + y;</pre></td>
     </tr>
 
@@ -351,21 +351,21 @@
     <tr>
     <td align="right" class="lineno"><pre>8</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>830</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1310</pre></td>
     <td align="left" class="src coveredLine"><pre>bool IsLeap(int year) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>9</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 138 times">&check;</span><span class="takenBranch" title="Branch 1 taken 692 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>830</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 258 times">&check;</span><span class="takenBranch" title="Branch 1 taken 1052 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1310</pre></td>
     <td align="left" class="src coveredLine"><pre>  if (year &lt;= 0) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>10</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 138 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>138</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 258 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>258</pre></td>
     <td align="left" class="src coveredLine"><pre>    throw std::invalid_argument("Year must be greater than 0");</pre></td>
     </tr>
 
@@ -385,29 +385,29 @@
 
     <tr>
     <td align="right" class="lineno"><pre>13</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 460 times">&check;</span><span class="takenBranch" title="Branch 1 taken 232 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>692</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 700 times">&check;</span><span class="takenBranch" title="Branch 1 taken 352 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1052</pre></td>
     <td align="left" class="src coveredLine"><pre>  if (year % 4 == 0) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>14</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 228 times">&check;</span><span class="takenBranch" title="Branch 1 taken 232 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>460</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 348 times">&check;</span><span class="takenBranch" title="Branch 1 taken 352 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>700</pre></td>
     <td align="left" class="src coveredLine"><pre>    if (year % 100 == 0) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>15</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 114 times">&check;</span><span class="takenBranch" title="Branch 1 taken 114 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>228</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 174 times">&check;</span><span class="takenBranch" title="Branch 1 taken 174 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>348</pre></td>
     <td align="left" class="src coveredLine"><pre>      if (year % 400 == 0) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>16</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>114</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>174</pre></td>
     <td align="left" class="src coveredLine"><pre>        return true;</pre></td>
     </tr>
 
@@ -421,7 +421,7 @@
     <tr>
     <td align="right" class="lineno"><pre>18</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>114</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>174</pre></td>
     <td align="left" class="src coveredLine"><pre>        return false;</pre></td>
     </tr>
 
@@ -442,7 +442,7 @@
     <tr>
     <td align="right" class="lineno"><pre>21</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>232</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>352</pre></td>
     <td align="left" class="src coveredLine"><pre>      return true;</pre></td>
     </tr>
 
@@ -470,7 +470,7 @@
     <tr>
     <td align="right" class="lineno"><pre>25</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>232</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>352</pre></td>
     <td align="left" class="src coveredLine"><pre>  return false;</pre></td>
     </tr>
 
@@ -498,28 +498,28 @@
     <tr>
     <td align="right" class="lineno"><pre>29</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>778</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1738</pre></td>
     <td align="left" class="src coveredLine"><pre>int GetMonthDays(int year, int month) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>30</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 232 times">&check;</span><span class="takenBranch" title="Branch 1 taken 546 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>778</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 352 times">&check;</span><span class="takenBranch" title="Branch 1 taken 1386 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>1738</pre></td>
     <td align="left" class="src coveredLine"><pre>    if (month == 2) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>31</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 116 times">&check;</span><span class="takenBranch" title="Branch 2 taken 116 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>232</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 176 times">&check;</span><span class="takenBranch" title="Branch 2 taken 176 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>352</pre></td>
     <td align="left" class="src coveredLine"><pre>        if (IsLeap(year)) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>32</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>116</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>176</pre></td>
     <td align="left" class="src coveredLine"><pre>            return 29;</pre></td>
     </tr>
 
@@ -533,7 +533,7 @@
     <tr>
     <td align="right" class="lineno"><pre>34</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>116</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>176</pre></td>
     <td align="left" class="src coveredLine"><pre>            return 28;</pre></td>
     </tr>
 
@@ -553,15 +553,15 @@
 
     <tr>
     <td align="right" class="lineno"><pre>37</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 524 times">&check;</span><span class="takenBranch" title="Branch 1 taken 22 times">&check;</span><span class="takenBranch" title="Branch 2 taken 114 times">&check;</span><span class="takenBranch" title="Branch 3 taken 410 times">&check;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>546</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 1304 times">&check;</span><span class="takenBranch" title="Branch 1 taken 82 times">&check;</span><span class="takenBranch" title="Branch 2 taken 174 times">&check;</span><span class="takenBranch" title="Branch 3 taken 1130 times">&check;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>1386</pre></td>
     <td align="left" class="src coveredLine"><pre>    if (month > 12 || month &lt;= 0) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>38</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 136 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>136</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 256 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>256</pre></td>
     <td align="left" class="src coveredLine"><pre>        throw std::invalid_argument("Month should be in range [1-12]");</pre></td>
     </tr>
 
@@ -574,15 +574,15 @@
 
     <tr>
     <td align="right" class="lineno"><pre>40</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 294 times">&check;</span><span class="takenBranch" title="Branch 1 taken 116 times">&check;</span><span class="takenBranch" title="Branch 2 taken 276 times">&check;</span><span class="takenBranch" title="Branch 3 taken 18 times">&check;</span><br/><span class="takenBranch" title="Branch 4 taken 258 times">&check;</span><span class="takenBranch" title="Branch 5 taken 18 times">&check;</span><span class="takenBranch" title="Branch 6 taken 20 times">&check;</span><span class="takenBranch" title="Branch 7 taken 238 times">&check;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>410</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 954 times">&check;</span><span class="takenBranch" title="Branch 1 taken 176 times">&check;</span><span class="takenBranch" title="Branch 2 taken 876 times">&check;</span><span class="takenBranch" title="Branch 3 taken 78 times">&check;</span><br/><span class="takenBranch" title="Branch 4 taken 798 times">&check;</span><span class="takenBranch" title="Branch 5 taken 78 times">&check;</span><span class="takenBranch" title="Branch 6 taken 80 times">&check;</span><span class="takenBranch" title="Branch 7 taken 718 times">&check;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>1130</pre></td>
     <td align="left" class="src coveredLine"><pre>    if (month == 4 || month == 6 || month == 9 || month == 11) {</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>41</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>172</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>412</pre></td>
     <td align="left" class="src coveredLine"><pre>        return 30;</pre></td>
     </tr>
 
@@ -596,7 +596,7 @@
     <tr>
     <td align="right" class="lineno"><pre>43</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>238</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>718</pre></td>
     <td align="left" class="src coveredLine"><pre>    return 31;</pre></td>
     </tr>
 

@@ -16,51 +16,57 @@ void Print(const FileNode& node) {
 }
 
 TEST(GetTreeTest, NotExist) {
+  auto temp_path = boost::filesystem::temp_directory_path();
   ASSERT_ANY_THROW(GetTree("task5", false));
   ASSERT_ANY_THROW(GetTree("task5", true));
   
-  boost::filesystem::remove_all( "task6" );
-  boost::filesystem::create_directory( "task6" );
-  std::ofstream file( "task6/example.cpp" );
+  boost::filesystem::remove_all(temp_path / "task6" );
+  boost::filesystem::create_directory(temp_path / "task6" );
+  auto test_path = (temp_path / "task6/example.cpp").string();
+  std::ofstream file(test_path);
   file << "Hello!\n";
   file.close();
   
-  ASSERT_ANY_THROW(GetTree("task6/example.cpp", false));
-  ASSERT_ANY_THROW(GetTree("task6/example.cpp", true));
-  boost::filesystem::remove_all( "task6" );
+  ASSERT_ANY_THROW(GetTree(test_path, false));
+  ASSERT_ANY_THROW(GetTree(test_path, true));
+  boost::filesystem::remove_all(temp_path / "task6" );
 }
 
 TEST(GetTreeTest, Exist) {
-  boost::filesystem::remove_all( "tasks" );
-  boost::filesystem::create_directory( "tasks" );
-  boost::filesystem::create_directory( "tasks/task" );
-  boost::filesystem::create_directory( "tasks/task1" );
-  boost::filesystem::create_directory( "tasks/task2" );
-  std::ofstream file( "tasks/task/example.cpp" );
+  auto temp_path = boost::filesystem::temp_directory_path();
+  std::cout << temp_path.string();
+  boost::filesystem::remove_all(temp_path / "tasks" );
+  boost::filesystem::create_directory(temp_path / "tasks" );
+  boost::filesystem::create_directory(temp_path / "tasks/task" );
+  boost::filesystem::create_directory(temp_path / "tasks/task1" );
+  boost::filesystem::create_directory(temp_path / "tasks/task2" );
+  auto file_path = (temp_path / "tasks/task/example.cpp").string();
+  std::ofstream file(file_path);
   file << "Hello!\n";
   file.close();
-  auto node_full = GetTree("tasks", false);
-  auto node_only_dir = GetTree("tasks", true);
-  std::cout << "NODE FULL";
+  auto test_path = (temp_path / "tasks").string();
+  auto node_full = GetTree(test_path, false);
+  auto node_only_dir = GetTree(test_path, true);
+  std::cout << "NODE FULL\n";
   Print(node_full);
   FileNode res_full = {"tasks", true, {
+    {"task2",true,{}},
     {"task",true,{{"example.cpp", false, {}}}},
     {"task1",true,{}},
-    {"task2",true,{}}
   }};
   ASSERT_EQ(res_full, node_full);
   
   std::cout << "NODE only_dir";
   Print(node_only_dir);
   FileNode res_dir_only = {"tasks", true, {
+    {"task2",true,{}},
     {"task",true,{}},
-    {"task1",true,{}},
-    {"task2",true,{}}
+    {"task1",true,{}}
   }};
   ASSERT_EQ(res_dir_only , node_only_dir);
   
-  FilterEmptyNodes(node_full, "tasks");
-  auto newnode = GetTree("tasks", false);
+  FilterEmptyNodes(node_full, test_path);
+  auto newnode = GetTree(test_path, false);
   std::cout << "NODE clear";
   Print(newnode);
   FileNode clear_dir = {"tasks", true, {
@@ -69,7 +75,7 @@ TEST(GetTreeTest, Exist) {
   ASSERT_EQ(clear_dir, newnode);
   ASSERT_FALSE(clear_dir == node_full);
   
-  boost::filesystem::remove_all( "tasks" );
+  boost::filesystem::remove_all(temp_path / "tasks");
 }
 
 TEST(GetTreeTest, Operator) {

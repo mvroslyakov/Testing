@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE coverage SYSTEM 'http://cobertura.sourceforge.net/xml/coverage-04.dtd'>
-<coverage line-rate="0.0" branch-rate="0.0" lines-covered="0" lines-valid="0" branches-covered="0" branches-valid="0" complexity="0.0" timestamp="1619976182" version="gcovr 4.2">
+<coverage line-rate="0.0" branch-rate="0.0" lines-covered="0" lines-valid="0" branches-covered="0" branches-valid="0" complexity="0.0" timestamp="1620334320" version="gcovr 4.2">
   <sources>
     <source>/home/mikhail/Рабочий стол/Testing/task4/src</source>
   </sources>
